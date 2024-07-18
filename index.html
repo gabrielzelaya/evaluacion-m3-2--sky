@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everybody Can Fly</title>
+    <link rel="stylesheet" href="styles.scss">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Everybody Can Fly</a>
+                <ul class="nav-menu">
+                    <li><a href="#destinations">Destinos</a></li>
+                    <li><a href="#packages">Paquetes</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="destinations" class="section destinations">
+        <div class="container">
+            <h2>Destinos</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="paris.jpg" alt="Paris, Francia" width="480" height="380">
+                    <h3>Paris, Francia</h3>
+                    <p>La ciudad del amor y las luces, perfecta para una escapada romántica.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="Tokyo.jpg" alt="Tokyo, Japón" width="480" height="380">
+                    <h3>Tokyo, Japón</h3>
+                    <p>Una metrópolis vibrante que combina lo moderno con lo tradicional.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="newyork.jpg" alt="New York, USA" width="480" height="380">
+                    <h3>New York, USA</h3>
+                    <p>La ciudad que nunca duerme, llena de oportunidades y cosas por hacer.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="sydney.jpg" alt="Sidney, Australia" width="480" height="380">
+                    <h3>Sidney, Australia</h3>
+                    <p>Conocida por su impresionante ópera y hermosas playas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="section packages">
+        <div class="container">
+            <h2>Paquetes</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>Paquete Romántico</h3>
+                    <p>Incluye vuelos, alojamiento en hotel 5 estrellas y tours guiados.</p>
+                    <p class="price">$2,500</p>
+                </div>
+                <div class="package-card">
+                    <h3>Paquete Aventura</h3>
+                    <p>Excursiones extremas, actividades al aire libre y más.</p>
+                    <p class="price">$3,000</p>
+                </div>
+                <div class="package-card">
+                    <h3>Paquete Familiar</h3>
+                    <p>Actividades para toda la familia y descuentos en parques temáticos.</p>
+                    <p class="price">$2,200</p>
+                </div>
+                <div class="package-card">
+                    <h3>Paquete Lujo</h3>
+                    <p>Lo mejor de lo mejor en hoteles, restaurantes y experiencias.</p>
+                    <p class="price">$5,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Everybody Can Fly. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

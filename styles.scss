@@ -1,0 +1,182 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-color: #f2f2f2;
+$text-color: #333;
+$accent-color: #e74c3c;
+$font-stack: 'Arial', sans-serif;
+
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("fog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: $font-stack;
+    color: $text-color;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+
+    &.destinations {
+        background-color: lighten($background-color, 5%);
+    }
+
+    &.packages {
+        background-color: lighten($background-color, 10%);
+    }
+}
+
+.header {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+
+    li {
+        margin-left: 20px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}
+
+.destinations-grid,
+.packages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .destination-card,
+    .package-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: left;
+        width: calc(25% - 20px);
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 200px; // Limitar el tamaño de la imagen
+            border-radius: 10px;
+            margin-bottom: 10px;
+            object-fit: cover; // Asegurar que la imagen se ajuste bien
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            color: $primary-color;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: $accent-color;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    }
+
+    .btn {
+        background: $primary-color;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background: darken($primary-color, 10%);
+        }
+    }
+}
+
+.footer {
+    background-color: $secondary-color;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
